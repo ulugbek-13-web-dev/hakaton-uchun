@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+.smart-jackpot{
+    display: flex;
+    margin-top: 100px;
+}
+.smart-jackpot-title{
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #242f51;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+.jackpot-title{
+    width: 50%;
+    margin-right: 10px;
+}
+.smart-jackpot-body{
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    margin-left: 20px;
+}
+.jackpot-body{
+    width: 70%;
+}
+.smart-jackpot h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #242f51;;
+}
+.smart-jackpot p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: gray;
+}
+@media screen and (max-width:800px){
+    .smart-jackpot{
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+    }
+    .smart-jackpot-title{
+        display: flex;
+        border: none!important;
+        justify-content: center;
+    }
+    .jackpot-title{
+        width: 50%;
+        margin-left: 0!important;
+        margin-right: 0px!important;
+    }
+    .jackpot-title h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .smart-jackpot-body{
+        margin-left: 0;
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .jackpot-body{
+        width: 70%;
+    }
+    .jackpot-body p{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+

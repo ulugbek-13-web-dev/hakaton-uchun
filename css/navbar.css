@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: #f2f5f7;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    height: 4rem;
+    width: 100vw;
+    background-color: rgb(246, 246, 248);;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+/*Styling logo*/
+.logo{
+    padding:1vh 2vh;
+    margin-left: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    height: 7rem;
+    width: 10rem;
+}
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+.nav-links li a:hover {
+    color: #61DAFB;
+}
+.nav-links li {
+    position: relative;
+    padding:  10px 20px;
+}
+/*Styling Buttons*/
+.join-button{
+    color: #61DAFB;
+    background-color: transparent;
+    
+    border-radius: 2em;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    margin-right: 20px;
+    border: 1px solid #61DAFB;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #61DAFB;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 1024px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        margin-top: 0%;
+        position: fixed;
+        background: white;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links.open li{
+        padding: 30px;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

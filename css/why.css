@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+.why{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.why-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.why-text-title{
+    display: flex;
+    justify-content: center;
+}
+.why-text-title h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #242f51;
+}
+.why-text-main p{
+    color: gray;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+.why-text-main-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.why-text-main{
+    width: 50%;
+}
+.why-text-main p{
+    line-height: 25px;
+}
+.why-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.why-body-card{
+    margin-left: 10px;
+    flex: 0 0 30%;
+    margin-top: 10px;
+    padding: 30px 0 ;
+}
+.why-card-img-container{
+    display: flex;
+    justify-content: center;
+}
+.why-card-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+#card-1{
+    background-color: rgb(255,236,239);
+}
+#card-2{
+    background-color: rgb(234,249,255);
+}
+#card-3{
+    background-color: rgb(255,246,211);
+}
+#card-4{
+    background-color: rgb(228,255,238);
+}
+#card-5{
+    background-color: rgb(244,244,255);
+}
+ #card-6{
+    background-color: rgb(253,238,228);
+}
+
+.why-card-img img{
+    width: 100%;
+}
+.card-text-title{
+    text-align: center;
+    margin-top: 8px;
+}
+.card-text-title h2{
+    font-family: 'Poppins',sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #242f51;
+}
+.why-text-body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.why-text-body p{
+    width: 90%;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    color: gray;
+}
+@media screen and (max-width:800px){
+    .why-text-title{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .why-text-title h2{
+        width: 70%;
+    }
+    .why-text-main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .why-text-main p{
+        width: 80%;
+    }
+    .why-body{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

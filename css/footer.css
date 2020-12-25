@@ -1,0 +1,34 @@
+footer{
+    background-color: rgb(9,20,46);
+    margin-top: -100px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-navbar{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.footer-navbar ul {
+    display: flex;
+}
+.footer-navbar ul li{
+    margin-left: 50px;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;   
+}
+@media screen and (max-width:480px){
+    .footer-navbar{
+        display: none;
+    }
+    .download-app-text-img{
+        display: flex;
+    }
+    .download-app-text-img img{
+        width: 40%;
+    }
+
+    
+}
